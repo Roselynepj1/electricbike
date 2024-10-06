@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electric Bike</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="body">
+        <section class="container">
+          <div class="left">
+            <h4 class="page-title">Electric Bike</h4>
+            <figure>
+              <img src="./images/black.jpg" alt="Black" id="targetImage" />
+              <figcaption>
+                <button id="test">Test Acceleration</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="right">
+            <p class="right-title">Description</p>
+            <hr />
+            <div class="bike-details" id="bike-details">
+              <p><strong>Brand:</strong> <span id="brand"></span></p>
+              <p><strong>Model:</strong> <span id="model"></span></p>
+              <div>
+                <strong>Colors:</strong>
+                <div class="colors">
+                  <span id="colorBlack" data-image="./images/black.jpg"></span>
+                  <span id="colorRed" data-image="./images/red.png"></span>
+                  <span id="colorBlue" data-image="./images/blue.webp"></span>
+                </div>
+              </div>
+              <p><strong>Features:</strong></p>
+              <ul id="features"></ul>
+              <p><strong>Specifications:</strong></p>
+              <ul>
+                <li>
+                  <strong>Battery Capacity:</strong>
+                  <span id="batteryCapacity"></span> Wh
+                </li>
+                <li>
+                  <strong>Charging time:</strong>
+                  About
+                  <span id="chargingTime"></span> hours
+                </li>
+                <li>
+                  <strong>Range:</strong>
+                  About
+                  <span id="range"></span> km
+                </li>
+                <li>
+                  <strong>Motor Power:</strong> <span id="motorPower"></span> W
+                </li>
+                <li>
+                  <strong>Top Speed:</strong> <span id="topSpeed"></span> km/h
+                </li>
+                <li>
+                  <strong>Wheel Size:</strong> <span id="wheelSize"></span> inches
+                </li>
+                <li><strong>Brake:</strong> <span id="brake"></span></li>
+                <li><strong>Weight:</strong> <span id="weight"></span> kg</li>
+                <li>
+                  <strong>Max User Weight:</strong> <span id="userWeight"></span> kg
+                </li>
+              </ul>
+            </div>
+            <div class="gauge" id="gauge-container">
+              <div class="gauge-meter">
+                <canvas id="gauge"></canvas>
+              </div>
+              <div class="gauge-controls">
+                <button class="accelerate" id="accelerate">Accelerate</button>
+                <button class="deccelerate" id="deaccelerate">Deccelerate</button>
+                <button class="close" id="close">Close</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <hr />
+          <p>Credits: Roselynepj</p>
+        </section>
+    </div>
+  </body>
+  <script src="./js//gauge.min.js"></script>
+  <script src="./js/ElectricBike.js"></script>
+  <script src="./js/app.js"></script>
+</html>
